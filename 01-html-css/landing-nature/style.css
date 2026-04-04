@@ -1,0 +1,334 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.wrapper {
+    max-width: 1440px;
+    padding: 35px 60px;
+}
+
+header {
+    height: 103px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 30px;
+    list-style: none;
+}
+
+.nav-list__item {
+    font-size: 20px;
+    color: #3D3D3D;
+}
+
+.logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 10px;
+}
+
+.logo img {
+    width: 50px;
+    height: 50px;
+}
+
+.button-start {
+    width: 216px;
+    height: 41px;
+    font-size: 18px;
+    background-color: #fff;
+    color: #3D3D3D;
+    border: 1px solid #666666;
+    padding: 5px 15px;
+    border-radius: 50px;
+}
+
+.intro {
+    background-image: url('./assets/images/surikat.png');
+    background-size: cover;
+    width: 1320px;
+    height: 696px;
+    border-radius: 50px;
+    padding: 51px;
+    position: relative;
+}
+
+h1 {
+    color: #fff;
+    font-size: 100px;
+    max-width: 1047px;
+}
+
+.intro p {
+    font-size: 20px;
+    position: absolute;
+    width: 378px;
+    top: 212px;
+    right: 0;
+    color:#fff
+}
+
+.button-help {
+    width: 169px;
+    height: 169px;
+    border-radius: 50%;
+    border: 1px solid #fff;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: calc(50% - 75px);
+    bottom: 50px;
+}
+
+.button-help button {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    background-color: #fff;
+    border: none;
+    color: #BF632F;
+    font-size: 22px;
+}
+
+.our-mission__container {
+    display: flex;
+    gap: 107px;
+    margin-top: 120px;
+    height: 400px;
+}
+
+.our-mission__img-wrapper {
+    border-radius: 50px;
+    width: 400px;
+    height: 400px;
+}
+
+.our-mission__img {
+    background-image: url('./assets/images/lion.png');
+    width: 400px;
+    height: 400px;
+    background-size: cover;
+    border-radius: 50px;
+    box-sizing: content-box;
+}
+
+.our-mission__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 50px;
+    height: 400px;
+}
+
+.our-mission h2 {
+    font-size: 30px;
+    color: #3E3E3E;
+}
+
+.our-mission p {
+    font-size: 20px;
+    color: #3E3E3E;
+}
+
+.our-mission__button {
+    width: 761px;
+    height: 66px;
+    font-size: 30px;
+    color: #171717;
+    background-color: #BC5E28;
+    border: none;
+    border-radius: 50px;
+}
+
+.our-mission__grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+}
+
+.grid-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.grid-item h3 {
+    font-size: 50px;
+    color: #3E3E3E;
+}
+
+.grid-item p {
+    font-size: 30px;
+    color: #3E3E3E;
+}
+
+.our-work__container {
+    display: flex;
+    justify-content: space-between;
+    height: 640px;
+}
+
+.our-work__images {
+    position: relative;
+}
+
+.dolphines-image {
+    background-image: url('./assets/images/dolphines.png');
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 317px;
+    height: 317px;
+    border-radius: 50px;
+    box-sizing: content-box;
+    background-size: cover;
+}
+
+.jirafe-image {
+    background-image: url('./assets/images/jirafe.png');
+    position: absolute;
+    bottom: 0px;
+    right: -440px;
+    width: 240px;
+    height: 240px;
+    border-radius: 50px;
+    background-size: cover;
+}
+
+.our-work__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 705px;
+}
+
+.our-work h2 {
+    font-size: 50px;
+    color: #3E3E3E;
+}
+
+.our-work p {
+    font-size: 14px;
+    color: #3E3E3E;
+}
+
+.our-work__content ul:first-child {
+    border-top: 1px solid #3E3E3E;
+}
+
+.our-work__checkpoint {
+    display: flex;
+    justify-content: space-between;
+    font-size: 24px;
+    color: #3E3E3E;
+    border-bottom: 1px solid #3E3E3E;
+    height: 60px;
+    align-items: center;
+}
+
+.our-work__checkpoint img {
+    width: 24px;
+    height: 24px;
+}
+
+.help__container {
+    background-image: url('./assets/images/elephant.png');
+    background-size: cover;
+    width: 1320px;
+    height: 639px;
+    border-radius: 50px;
+    padding: 51px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 215px;
+    margin: 150px 0;
+}
+
+.help h2 {
+    color: #fff;
+    font-size: 50px;
+}
+
+.help p {
+    color: #fff;
+    font-size: 20px;
+    text-align: center;
+}
+
+.help__button {
+    border: 1px solid #E7C9BF;
+    font-size: 20px;
+    border-radius: 50px;
+    background-color: transparent;
+    color: #fff;
+    padding: 5px 15px;
+}
+
+footer {
+    border-top: 1px solid #3E3E3E;
+    color: #3E3E3E;
+}
+
+.footer_container {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-links, .footer-info {
+    display: flex;
+    justify-content: space-between;
+    gap: 200px;
+}
+
+footer h4 {
+    font-size: 20px;
+}
+
+footer ul {
+    text-align: start;
+    list-style: none;
+    font-size: 14px;
+    padding: 0;
+}
+
+.footer-info__logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.panda_logo {
+    width: 100px;
+    height: 100px;
+}
+
+.copyright_symbol {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    bottom: 30px;
+    right: 5px;
+}
+
+.footer-info__logo h4 {
+    color: #000;
+    font-size: 23px;
+}
+
+.footer-info__adress, .footer-info__copyright {
+    font-size: 12px;
+    color: #979797;
+}
