@@ -1,11 +1,17 @@
 * {
     margin: 0;
     box-sizing: border-box;
+    font-family: "Kulim Park", sans-serif;
 }
 
 .wrapper {
-    max-width: 1440px;
+    width: 1440px;
     padding: 35px 60px;
+    margin: 0 auto;
+}
+
+button:hover {
+    cursor: pointer;
 }
 
 header {
@@ -20,13 +26,17 @@ header {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    gap: 30px;
+    gap: 48px;
     list-style: none;
+    padding: 0;
 }
 
 .nav-list__item {
     font-size: 20px;
     color: #3D3D3D;
+    font-weight: 400;
+    line-height: 100%;
+    letter-spacing: 0%;
 }
 
 .logo {
@@ -34,6 +44,9 @@ header {
     flex-direction: column;
     align-items: center;
     font-size: 10px;
+    font-weight: 700;
+    margin-top: 5px;
+    margin-right: 178px;
 }
 
 .logo img {
@@ -55,10 +68,11 @@ header {
 .intro {
     background-image: url('./assets/images/surikat.png');
     background-size: cover;
+    background-position: center;
     width: 1320px;
     height: 696px;
     border-radius: 50px;
-    padding: 51px;
+    padding: 5px 32px;
     position: relative;
 }
 
@@ -66,20 +80,22 @@ h1 {
     color: #fff;
     font-size: 100px;
     max-width: 1047px;
+    font-weight: 600;
 }
 
 .intro p {
     font-size: 20px;
     position: absolute;
-    width: 378px;
-    top: 212px;
+    width: 368px;
+    top: 170px;
     right: 0;
-    color:#fff
+    color:#fff;
+    font-weight: 275;
 }
 
 .button-help {
-    width: 169px;
-    height: 169px;
+    width: 163px;
+    height: 163px;
     border-radius: 50%;
     border: 1px solid #fff;
     background-color: transparent;
@@ -87,8 +103,8 @@ h1 {
     justify-content: center;
     align-items: center;
     position: absolute;
-    left: calc(50% - 75px);
-    bottom: 50px;
+    left: calc(50% - 82px);
+    bottom: 35px;
 }
 
 .button-help button {
@@ -104,7 +120,8 @@ h1 {
 .our-mission__container {
     display: flex;
     gap: 107px;
-    margin-top: 120px;
+    margin-top: 128px;
+    margin-bottom: 72px;
     height: 400px;
 }
 
@@ -116,6 +133,7 @@ h1 {
 
 .our-mission__img {
     background-image: url('./assets/images/lion.png');
+    background-position: center;
     width: 400px;
     height: 400px;
     background-size: cover;
@@ -127,8 +145,8 @@ h1 {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    gap: 50px;
     height: 400px;
+    font-weight: 300;
 }
 
 .our-mission h2 {
@@ -139,10 +157,12 @@ h1 {
 .our-mission p {
     font-size: 20px;
     color: #3E3E3E;
+    margin-bottom: 19px;
+    width: 90%;
 }
 
 .our-mission__button {
-    width: 761px;
+    width: 751px;
     height: 66px;
     font-size: 30px;
     color: #171717;
@@ -155,28 +175,35 @@ h1 {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
+    gap: 35px;
 }
 
 .grid-item {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 12px;
 }
 
 .grid-item h3 {
     font-size: 50px;
     color: #3E3E3E;
+    font-weight: 700;
 }
 
 .grid-item p {
     font-size: 30px;
     color: #3E3E3E;
+    font-weight: 300;
 }
 
 .our-work__container {
     display: flex;
     justify-content: space-between;
     height: 640px;
+    margin-top: 121px;
 }
 
 .our-work__images {
@@ -185,6 +212,7 @@ h1 {
 
 .dolphines-image {
     background-image: url('./assets/images/dolphines.png');
+    background-position: center;
     position: absolute;
     top: 0;
     left: 0;
@@ -197,9 +225,10 @@ h1 {
 
 .jirafe-image {
     background-image: url('./assets/images/jirafe.png');
+    background-position: center;
     position: absolute;
-    bottom: 0px;
-    right: -440px;
+    bottom: -10px;
+    right: -508px;
     width: 240px;
     height: 240px;
     border-radius: 50px;
@@ -211,39 +240,57 @@ h1 {
     flex-direction: column;
     align-items: center;
     width: 705px;
+    margin-right: 55px;
 }
 
 .our-work h2 {
     font-size: 50px;
     color: #3E3E3E;
+    font-weight: 600;
+    margin-left: 10px;
 }
 
 .our-work p {
     font-size: 14px;
+    font-weight: 300;
     color: #3E3E3E;
+    width: 67%;
+    margin: 32px 0px 30px 50px;
 }
 
-.our-work__content ul:first-child {
-    border-top: 1px solid #3E3E3E;
+.our-work__content ul {
+    width: 745px;
+    margin-left: 5px;
 }
 
 .our-work__checkpoint {
     display: flex;
     justify-content: space-between;
-    font-size: 24px;
     color: #3E3E3E;
     border-bottom: 1px solid #3E3E3E;
-    height: 60px;
-    align-items: center;
+    height: 67.5px;
+}
+
+.our-work__checkpoint:nth-child(1) {
+    border-top: 1px solid #3E3E3E;
+}
+
+.our-work__checkpoint p {
+    font-size: 24px;
+    font-weight: 300;
+    width: 100%;
+    margin: 12px 0px 0px 0px;
 }
 
 .our-work__checkpoint img {
     width: 24px;
     height: 24px;
+    margin-top: 12px;
 }
 
 .help__container {
     background-image: url('./assets/images/elephant.png');
+    background-position: center;
     background-size: cover;
     width: 1320px;
     height: 639px;
@@ -252,8 +299,9 @@ h1 {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 215px;
-    margin: 150px 0;
+    gap: 18px;
+    padding: 245px 245px 160px 245px;
+    margin: 120px 0;
 }
 
 .help h2 {
@@ -273,12 +321,13 @@ h1 {
     border-radius: 50px;
     background-color: transparent;
     color: #fff;
-    padding: 5px 15px;
+    padding: 5px 27px;
 }
 
 footer {
     border-top: 1px solid #3E3E3E;
     color: #3E3E3E;
+    margin-top: 122px;
 }
 
 .footer_container {
@@ -288,12 +337,14 @@ footer {
 
 .footer-links, .footer-info {
     display: flex;
-    justify-content: space-between;
-    gap: 200px;
+    gap: 50px;
+    margin-top: 29px;
 }
 
 footer h4 {
     font-size: 20px;
+    margin-bottom: 12px;
+    font-weight: 300;
 }
 
 footer ul {
@@ -301,6 +352,87 @@ footer ul {
     list-style: none;
     font-size: 14px;
     padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 13px;
+    font-weight: 300;
+    width: 300px;
+}
+
+.footer-links__contacts {
+    margin-left: 17px;
+}
+
+.footer-links__news {
+    margin-left: 5px;
+}
+
+.footer-links__news h4 {
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+.footer-links__buttons {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-align: center;
+    display: flex;
+    gap: 15px;
+    margin-top: 75px;
+}
+
+.vk, .telegram {
+    border-radius: 50px;
+    padding: 8px 23px;
+    border: 1px solid #D9D9D9;
+    background-color: #fff;
+    color: #979797;
+}
+
+#email {
+    background-color: #fff;
+    color: #979797;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    border: none;
+    border-bottom: 1px solid #979797;
+    width: 247px;
+    margin-right: 10px;
+}
+
+.inputs {
+    margin-right: 5px;
+}
+
+#news {
+    width: 8px;
+    height: 8px;
+}
+
+.checkbox-wrapper {
+    display: flex;
+    align-items: center;
+    margin-top: 3px;
+    gap: 3px;
+}
+
+.checkbox-wrapper label {
+    font-weight: 300;
+    font-size: 7px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    margin: 0;
+}
+
+.footer-info {
+    margin-top: 73px;
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
 }
 
 .footer-info__logo {
@@ -308,6 +440,8 @@ footer ul {
     flex-direction: column;
     align-items: center;
     position: relative;
+    font-weight: 700;
+    font-size: 23px;
 }
 
 .panda_logo {
@@ -319,16 +453,19 @@ footer ul {
     position: absolute;
     width: 20px;
     height: 20px;
-    bottom: 30px;
-    right: 5px;
+    bottom: 25px;
+    right: 3px;
 }
 
 .footer-info__logo h4 {
     color: #000;
     font-size: 23px;
+    margin: 0;
 }
 
 .footer-info__adress, .footer-info__copyright {
     font-size: 12px;
     color: #979797;
+    margin-bottom: 13px;
+    margin-right: 20px;
 }
