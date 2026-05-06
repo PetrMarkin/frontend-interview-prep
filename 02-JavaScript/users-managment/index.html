@@ -1,0 +1,29 @@
+<div class="app">
+  <h1>📱 Менеджер пользователей</h1>
+  
+  <div class="stats">
+    <div>Всего: <span id="totalCount">0</span></div>
+    <div>Активных: <span id="activeCount">0</span></div>
+    <div>Средний возраст: <span id="avgAge">0</span></div>
+  </div>
+  
+  <div class="controls">
+    <input type="text" id="searchInput" placeholder="🔍 Поиск по имени...">
+    <select id="sortSelect">
+      <option value="default">По умолчанию</option>
+      <option value="name">По имени</option>
+      <option value="age">По возрасту</option>
+    </select>
+    <button id="clearInactiveBtn">🗑️ Очистить неактивных</button>
+    <button id="exportBtn">💾 Экспорт</button>
+  </div>
+  
+  <div class="add-form">
+    <input type="text" id="nameInput" placeholder="Имя">
+    <input type="email" id="emailInput" placeholder="Email">
+    <input type="number" id="ageInput" placeholder="Возраст">
+    <button id="addBtn">➕ Добавить</button>
+  </div>
+  
+  <div id="usersContainer" class="users-list"></div>
+</div>
