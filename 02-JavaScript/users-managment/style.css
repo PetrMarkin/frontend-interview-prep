@@ -1,0 +1,376 @@
+/* Reset и базовые стили */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    min-height: 100vh;
+    padding: 20px;
+}
+
+/* Основной контейнер */
+.app {
+    max-width: 1200px;
+    margin: 0 auto;
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+    padding: 30px;
+}
+
+/* Заголовок */
+h1 {
+    color: #333;
+    margin-bottom: 30px;
+    text-align: center;
+    font-size: 2.5em;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+/* Блок статистики */
+.stats {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+    margin-bottom: 30px;
+    padding: 20px;
+    background: #f8f9fa;
+    border-radius: 15px;
+}
+
+.stats div {
+    text-align: center;
+    font-size: 1.1em;
+    color: #555;
+    font-weight: 500;
+}
+
+.stats span {
+    display: block;
+    font-size: 2em;
+    font-weight: bold;
+    color: #667eea;
+    margin-top: 5px;
+}
+
+/* Панель управления */
+.controls {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 25px;
+    flex-wrap: wrap;
+}
+
+.controls input,
+.controls select,
+.controls button {
+    padding: 12px 20px;
+    font-size: 14px;
+    border: 2px solid #e0e0e0;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+
+.controls input {
+    flex: 1;
+    min-width: 200px;
+}
+
+.controls input:focus,
+.controls select:focus {
+    outline: none;
+    border-color: #667eea;
+    box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+}
+
+.controls select {
+    background: white;
+    cursor: pointer;
+}
+
+.controls button {
+    background: #667eea;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.controls button:hover {
+    background: #5a67d8;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(102, 126, 234, 0.3);
+}
+
+.controls button:active {
+    transform: translateY(0);
+}
+
+/* Форма добавления */
+.add-form {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 30px;
+    flex-wrap: wrap;
+    padding: 20px;
+    background: #f8f9fa;
+    border-radius: 15px;
+}
+
+.add-form input {
+    flex: 1;
+    padding: 12px 15px;
+    border: 2px solid #e0e0e0;
+    border-radius: 10px;
+    font-size: 14px;
+    transition: all 0.3s ease;
+}
+
+.add-form input:focus {
+    outline: none;
+    border-color: #667eea;
+    box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+}
+
+.add-form button {
+    padding: 12px 30px;
+    background: #48bb78;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.add-form button:hover {
+    background: #38a169;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(72, 187, 120, 0.3);
+}
+
+/* Список пользователей */
+.users-list {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 20px;
+}
+
+/* Карточка пользователя */
+.list-item {
+    background: white;
+    border: 2px solid #e0e0e0;
+    border-radius: 15px;
+    padding: 20px;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.list-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    border-color: #667eea;
+}
+
+/* Стили для элементов карточки */
+.user-name {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+    padding-right: 70px;
+}
+
+.user-age {
+    color: #667eea;
+    font-weight: 600;
+    margin-bottom: 8px;
+    font-size: 1.1em;
+}
+
+.user-email {
+    color: #777;
+    font-size: 0.9em;
+    margin-bottom: 10px;
+    word-break: break-all;
+}
+
+.user-status {
+    display: inline-block;
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 0.85em;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+/* Кнопка удаления */
+.deleteBtn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: #fc8181;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 0.85em;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.deleteBtn:hover {
+    background: #f56565;
+    transform: scale(1.05);
+}
+
+.deleteBtn:active {
+    transform: scale(0.95);
+}
+
+/* Состояния загрузки и ошибок */
+.loading {
+    text-align: center;
+    padding: 60px;
+    font-size: 1.2em;
+    color: #667eea;
+    position: relative;
+}
+
+.loading::after {
+    content: '';
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin-left: 10px;
+    border: 3px solid #e0e0e0;
+    border-top-color: #667eea;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    to { transform: rotate(360deg); }
+}
+
+.error {
+    text-align: center;
+    padding: 60px;
+    color: #fc8181;
+}
+
+.error button {
+    margin-top: 15px;
+    padding: 10px 20px;
+    background: #667eea;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+.error button:hover {
+    background: #5a67d8;
+}
+
+/* Пустое состояние */
+.users-list:empty::before {
+    content: "📭 Нет пользователей";
+    display: block;
+    text-align: center;
+    padding: 60px;
+    color: #999;
+    font-size: 1.2em;
+    grid-column: 1 / -1;
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+    .app {
+        padding: 20px;
+    }
+    
+    h1 {
+        font-size: 1.8em;
+    }
+    
+    .controls,
+    .add-form {
+        flex-direction: column;
+    }
+    
+    .controls button,
+    .add-form button {
+        width: 100%;
+    }
+    
+    .users-list {
+        grid-template-columns: 1fr;
+    }
+    
+    .stats {
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+    
+    .deleteBtn {
+        position: static;
+        margin-top: 10px;
+        width: 100%;
+    }
+    
+    .user-name {
+        padding-right: 0;
+    }
+}
+
+/* Анимации */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.list-item {
+    animation: fadeIn 0.3s ease-out;
+}
+
+/* Стили для валидации (опционально) */
+.add-form input:invalid {
+    border-color: #fc8181;
+}
+
+/* Стили для скроллбара */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #667eea;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #5a67d8;
+}
